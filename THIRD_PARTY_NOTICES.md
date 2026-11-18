@@ -1,15 +1,16 @@
 # Third-party notices
 
-Clomi is built with the open-source components listed below. Each component remains under its own licence.
-Where a component offers a choice of licences (for example "MIT OR Apache-2.0"), Clomi uses it under the MIT licence unless only another applies.
+Archiplant is built with the open-source components listed below. Each component remains under its own licence.
+Where a component offers a choice of licences (for example "MIT OR Apache-2.0"), Archiplant uses it under the MIT licence unless only another applies.
 
 ## Other software
 
 - Microsoft Edge WebView2 Runtime: used to draw the window. Part of Windows 11; distributed by Microsoft under its own terms.
-- qpdf (Apache-2.0, https://github.com/qpdf/qpdf): not included. Installed separately, only if the user agrees, for the PDF tools.
+- qpdf 12.2.0 (Apache-2.0, https://github.com/qpdf/qpdf): the unmodified program files (qpdf.exe, qpdf30.dll) are installed in the "qpdf" folder next to Archiplant and run for the PDF tools. The licence text is in that folder (LICENSE-APACHE-2.0.txt). The qpdf Windows build links further libraries (such as zlib and a JPEG library); see the qpdf project for their notices.
+- Microsoft Visual C++ Runtime (msvcp140*.dll, vcruntime140*.dll, concrt140.dll): shipped with qpdf in the same folder; redistributable files of Microsoft Visual Studio, under Microsoft's terms.
 - NSIS (zlib/libpng licence, https://nsis.sourceforge.io): used to build the installer.
 
-## Rust crates (315)
+## Rust crates (320)
 
 | Crate | Version | Licence | Source |
 |---|---|---|---|
@@ -22,8 +23,8 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | atomic-waker | 1.1.2 | Apache-2.0 OR MIT | https://github.com/smol-rs/atomic-waker |
 | auto-launch | 0.6.0 | MIT | https://github.com/zzzgydi/auto-launch.git |
 | autocfg | 1.5.1 | Apache-2.0 OR MIT | https://github.com/cuviper/autocfg |
-| base64 | 0.22.1 | MIT OR Apache-2.0 | https://github.com/marshallpierce/rust-base64 |
 | base64 | 0.23.1 | MIT OR Apache-2.0 | https://github.com/marshallpierce/rust-base64 |
+| base64 | 0.22.1 | MIT OR Apache-2.0 | https://github.com/marshallpierce/rust-base64 |
 | bit-set | 0.8.0 | Apache-2.0 OR MIT | https://github.com/contain-rs/bit-set |
 | bit-vec | 0.8.0 | Apache-2.0 OR MIT | https://github.com/contain-rs/bit-vec |
 | bitflags | 2.13.2 | MIT OR Apache-2.0 | https://github.com/bitflags/bitflags |
@@ -54,6 +55,8 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | cssparser | 0.37.0 | MPL-2.0 | https://github.com/servo/rust-cssparser |
 | cssparser-macros | 0.7.1 | MPL-2.0 | https://github.com/servo/rust-cssparser |
 | ctor | 1.0.13 | Apache-2.0 OR MIT | https://github.com/mmastrac/linktime |
+| curve25519-dalek | 4.1.3 | BSD-3-Clause | https://github.com/dalek-cryptography/curve25519-dalek/tree/main/curve25519-dalek |
+| curve25519-dalek-derive | 0.1.1 | MIT/Apache-2.0 | https://github.com/dalek-cryptography/curve25519-dalek |
 | darling | 0.24.1 | MIT | https://github.com/TedDriggs/darling |
 | darling_core | 0.24.1 | MIT | https://github.com/TedDriggs/darling |
 | darling_macro | 0.24.1 | MIT | https://github.com/TedDriggs/darling |
@@ -70,6 +73,8 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | dtoa-short | 0.3.5 | MPL-2.0 | https://github.com/upsuper/dtoa-short |
 | dunce | 1.0.5 | CC0-1.0 OR MIT-0 OR Apache-2.0 | https://gitlab.com/kornelski/dunce |
 | dyn-clone | 1.0.20 | MIT OR Apache-2.0 | https://github.com/dtolnay/dyn-clone |
+| ed25519 | 2.2.3 | Apache-2.0 OR MIT | https://github.com/RustCrypto/signatures/tree/master/ed25519 |
+| ed25519-dalek | 2.2.0 | BSD-3-Clause | https://github.com/dalek-cryptography/curve25519-dalek/tree/main/ed25519-dalek |
 | embed-resource | 3.0.12 | MIT | https://github.com/nabijaczleweli/rust-embed-resource |
 | equivalent | 1.0.3 | Apache-2.0 OR MIT | https://github.com/indexmap-rs/equivalent |
 | erased-serde | 0.4.11 | MIT OR Apache-2.0 | https://github.com/dtolnay/erased-serde |
@@ -88,12 +93,12 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | futures-task | 0.3.34 | MIT OR Apache-2.0 | https://github.com/rust-lang/futures-rs |
 | futures-util | 0.3.34 | MIT OR Apache-2.0 | https://github.com/rust-lang/futures-rs |
 | generic-array | 0.14.7 | MIT | https://github.com/fizyk20/generic-array.git |
-| getrandom | 0.2.17 | MIT OR Apache-2.0 | https://github.com/rust-random/getrandom |
 | getrandom | 0.3.4 | MIT OR Apache-2.0 | https://github.com/rust-random/getrandom |
+| getrandom | 0.2.17 | MIT OR Apache-2.0 | https://github.com/rust-random/getrandom |
 | getrandom | 0.4.3 | MIT OR Apache-2.0 | https://github.com/rust-random/getrandom |
 | glob | 0.3.4 | MIT OR Apache-2.0 | https://github.com/rust-lang/glob |
-| hashbrown | 0.12.3 | MIT OR Apache-2.0 | https://github.com/rust-lang/hashbrown |
 | hashbrown | 0.17.1 | MIT OR Apache-2.0 | https://github.com/rust-lang/hashbrown |
+| hashbrown | 0.12.3 | MIT OR Apache-2.0 | https://github.com/rust-lang/hashbrown |
 | heck | 0.5.0 | MIT OR Apache-2.0 | https://github.com/withoutboats/heck |
 | hex | 0.4.3 | MIT OR Apache-2.0 | https://github.com/KokaKiwi/rust-hex |
 | html5ever | 0.39.0 | MIT OR Apache-2.0 | https://github.com/servo/html5ever |
@@ -116,8 +121,8 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | ident_case | 1.0.1 | MIT/Apache-2.0 | https://github.com/TedDriggs/ident_case |
 | idna | 1.1.0 | MIT OR Apache-2.0 | https://github.com/servo/rust-url/ |
 | idna_adapter | 1.2.2 | Apache-2.0 OR MIT | https://github.com/hsivonen/idna_adapter |
-| indexmap | 1.9.3 | Apache-2.0 OR MIT | https://github.com/bluss/indexmap |
 | indexmap | 2.14.2 | Apache-2.0 OR MIT | https://github.com/indexmap-rs/indexmap |
+| indexmap | 1.9.3 | Apache-2.0 OR MIT | https://github.com/bluss/indexmap |
 | infer | 0.22.0 | MIT | https://github.com/bojand/infer |
 | inout | 0.1.4 | MIT OR Apache-2.0 | https://github.com/RustCrypto/utils |
 | ipnet | 2.12.2 | MIT OR Apache-2.0 | https://github.com/krisprice/ipnet |
@@ -190,9 +195,9 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | ryu | 1.0.23 | Apache-2.0 OR BSL-1.0 | https://github.com/dtolnay/ryu |
 | same-file | 1.0.6 | Unlicense/MIT | https://github.com/BurntSushi/same-file |
 | schannel | 0.1.30 | MIT | https://github.com/steffengy/schannel-rs |
+| schemars | 1.2.3 | MIT | https://github.com/GREsau/schemars |
 | schemars | 0.9.0 | MIT | https://github.com/GREsau/schemars |
 | schemars | 0.8.22 | MIT | https://github.com/GREsau/schemars |
-| schemars | 1.2.3 | MIT | https://github.com/GREsau/schemars |
 | schemars_derive | 0.8.22 | MIT | https://github.com/GREsau/schemars |
 | scopeguard | 1.2.0 | MIT OR Apache-2.0 | https://github.com/bluss/scopeguard |
 | selectors | 0.38.0 | MPL-2.0 | https://github.com/servo/stylo |
@@ -213,12 +218,12 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | servo_arc | 0.4.3 | MIT OR Apache-2.0 | https://github.com/servo/stylo |
 | sha2 | 0.10.9 | MIT OR Apache-2.0 | https://github.com/RustCrypto/hashes |
 | shlex | 2.0.1 | MIT OR Apache-2.0 | https://github.com/comex/rust-shlex |
+| signature | 2.2.0 | Apache-2.0 OR MIT | https://github.com/RustCrypto/traits/tree/master/signature |
 | simd-adler32 | 0.3.10 | MIT | https://github.com/mcountryman/simd-adler32 |
 | siphasher | 1.0.4 | MIT OR Apache-2.0 | https://github.com/jedisct1/rust-siphash |
 | slab | 0.4.12 | MIT | https://github.com/tokio-rs/slab |
 | smallvec | 1.16.5 | MIT OR Apache-2.0 | https://github.com/servo/rust-smallvec |
 | socket2 | 0.6.5 | MIT OR Apache-2.0 | https://github.com/rust-lang/socket2 |
-| socket2 | 0.5.10 | MIT OR Apache-2.0 | https://github.com/rust-lang/socket2 |
 | softbuffer | 0.4.8 | MIT OR Apache-2.0 | https://github.com/rust-windowing/softbuffer |
 | stable_deref_trait | 1.2.1 | MIT OR Apache-2.0 | https://github.com/storyyeller/stable_deref_trait |
 | static_vcruntime | 3.0.0 | MIT OR Apache-2.0 OR Zlib | https://github.com/ChrisDenton/static_vcruntime |
@@ -275,6 +280,7 @@ Where a component offers a choice of licences (for example "MIT OR Apache-2.0"),
 | typeid | 1.0.3 | MIT OR Apache-2.0 | https://github.com/dtolnay/typeid |
 | typenum | 1.20.1 | MIT OR Apache-2.0 | https://github.com/paholg/typenum |
 | unicode-ident | 1.0.27 | (MIT OR Apache-2.0) AND Unicode-3.0 | https://github.com/dtolnay/unicode-ident |
+| unicode-normalization | 0.1.26 | (MIT OR Apache-2.0) AND Unicode-3.0 | https://github.com/unicode-rs/unicode-normalization |
 | unicode-segmentation | 1.13.3 | MIT OR Apache-2.0 | https://github.com/unicode-rs/unicode-segmentation |
 | universal-hash | 0.5.1 | MIT OR Apache-2.0 | https://github.com/RustCrypto/traits |
 | untrusted | 0.9.0 | ISC | https://github.com/briansmith/untrusted |
@@ -595,6 +601,113 @@ authorization of the copyright holder.
 ```
 Copyright (c) 2016-2017 Isis Agora Lovecruft, Henry de Valence. All rights reserved.
 Copyright (c) 2016-2024 Isis Agora Lovecruft. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
+
+## BSD 3-Clause License (curve25519-dalek)
+
+(text as shipped with the crate matching `curve25519-dalek-4*`; copyright lines of the other crates are in their repositories)
+
+```
+Copyright (c) 2016-2021 isis agora lovecruft. All rights reserved.
+Copyright (c) 2016-2021 Henry de Valence. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+========================================================================
+
+Portions of curve25519-dalek were originally derived from Adam Langley's
+Go ed25519 implementation, found at <https://github.com/agl/ed25519/>,
+under the following licence:
+
+========================================================================
+
+Copyright (c) 2012 The Go Authors. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
+
+## BSD 3-Clause License (ed25519-dalek)
+
+(text as shipped with the crate matching `ed25519-dalek-2*`; copyright lines of the other crates are in their repositories)
+
+```
+Copyright (c) 2017-2019 isis agora lovecruft. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
